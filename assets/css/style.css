@@ -1,0 +1,27 @@
+.weather-header {
+    background-image: linear-gradient(to right,rgb(132, 132, 207) , rgb(0, 0, 255));
+}
+
+#forecast .card {
+    width: 12rem!important;
+    background-color: rgb(31, 31, 74);
+}
+
+.card-title{
+    color: white;
+}
+
+.card-text{
+    color: white; 
+}
+
+.weather-search {
+    height: 50px;
+    font-size: 1.25rem;
+}
+
+.weather-search::placeholder {
+    height: 50px;
+    font-size: 1.25rem;
+    padding-left: 5%;
+}
