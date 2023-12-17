@@ -18,10 +18,5 @@
 .weather-search {
     height: 50px;
     font-size: 1.25rem;
-}
-
-.weather-search::placeholder {
-    height: 50px;
-    font-size: 1.25rem;
     padding-left: 5%;
 }
