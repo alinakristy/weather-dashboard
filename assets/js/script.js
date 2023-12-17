@@ -187,7 +187,7 @@ renderHistory()
 
 function search(cityInput) {
     // http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={limit}&appid={API key}
-    var geoUrl = 'http://api.openweathermap.org/geo/1.0/direct?q=' + cityInput + '&limit=1&appid=' + apiKey
+    var geoUrl = 'https://api.openweathermap.org/geo/1.0/direct?q=' + cityInput + '&limit=1&appid=' + apiKey
     fetch(geoUrl)
         .then(function (data) {
             return data.json()
@@ -201,7 +201,7 @@ function search(cityInput) {
             unshift(cityName)
             renderHistory()
             // api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}
-            var forecastUrl = 'http://api.openweathermap.org/data/2.5/forecast?lat=' + lat + '&lon=' + lon + '&appid=' + apiKey
+            var forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=' + lat + '&lon=' + lon + '&appid=' + apiKey
             fetch(forecastUrl)
                 .then(function (response) {
                     return response.json();
