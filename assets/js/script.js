@@ -211,6 +211,7 @@ function search(cityInput) {
                     var today = data.list[0]
 
                     showNowWeather(today)
+                    forecastCards.empty()
                     for (i = 1; i < data.list.length; i++) {
                         var forecast = data.list[i]
                         createCard(forecast)
